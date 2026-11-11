@@ -1,0 +1,6 @@
+{
+  "name": "Metrologiya Kalibrlash Sertifikati Tizimi (KU-11-2026)",
+  "description": "Suyuqlik termostati va suv vannalarini KU-11-2026 bo'yicha kalibrlash, noaniqlik byudjetini hisoblash va O'zbekiston Milliy Metrologiya Instituti (O'zMMI) namunaviy sertifikatini PDF formatida yuklab olish platformasi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

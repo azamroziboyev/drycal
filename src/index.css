@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+}
+
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  /* Hide app navigation and controls when printing */
+  header, footer, nav, aside, button, select, input, .print\:hidden {
+    display: none !important;
+  }
+  #cert-page-1,
+  #cert-page-2,
+  #cert-page-3,
+  #cert-page-4 {
+    page-break-after: always;
+    break-after: page;
+    box-shadow: none !important;
+    margin: 0 !important;
+    width: 210mm !important;
+    height: 297mm !important;
+  }
+  #protocol-content-sheet {
+    page-break-after: avoid;
+    break-after: avoid;
+    box-shadow: none !important;
+    margin: 0 !important;
+    width: 210mm !important;
+  }
+}
